@@ -1,0 +1,397 @@
+body {
+    background-image: url(/img/space.jpg);
+    -webkit-perspective: 800px;
+    perspective: 1000px;
+}
+
+.solar-system{
+    position: relative;
+    margin: 0 auto;
+    margin-top:250px;
+    height: 128px;
+    width: 128px;
+    top: 100px;
+    -webkit-transform-style:preserve-3d;
+    transform-style:preserve-3d;
+    -webkit-transform: rotateY(30deg) rotateX(80deg);
+    transform: rotateY(30deg) rotateX(80deg);
+}
+/*Orbs for planets*/
+
+.orb{
+    position: absolute;
+    border: 1px inset white;
+}
+.merkorb{
+    border-radius: 200px;
+    width: 200px;
+    height: 200px;
+    top: -36px;
+    left: -36px;
+}
+.veneraorb{
+    border-radius: 300px;
+    width: 300px;
+    height: 300px;
+    top: -86px;
+    left: -86px;
+}
+.earthorb{
+    border-radius: 400px;
+    width: 400px;
+    height: 400px;
+    top: -136px;
+    left: -136px;
+}
+.marsorb{
+    border-radius: 500px;
+    width: 500px;
+    height: 500px;
+    top: -186px;
+    left: -186px;
+}
+.jupiterorb{
+    border-radius: 600px;
+    width: 600px;
+    height: 600px;
+    top: -236px;
+    left: -236px;
+}
+.saturnorb{
+    border-radius: 700px;
+    width: 700px;
+    height: 700px;
+    top: -286px;
+    left: -286px;
+}
+.uranusorb{
+    border-radius: 800px;
+    width: 800px;
+    height: 800px;
+    top: -336px;
+    left: -336px;
+}
+.neptuneorb{
+    border-radius: 900px;
+    width: 900px;
+    height: 900px;
+    top: -386px;
+    left: -386px;
+}
+.plutoorb{
+    border-radius: 1000px;
+    width: 1000px;
+    height: 1000px;
+    top: -436px;
+    left: -436px;
+}
+
+/*Planets*/
+
+body img{
+    width: inherit;
+    height: inherit;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateY(-30deg) rotateX(-80deg);
+    transform: rotateY(-30deg) rotateX(-80deg);
+}
+.planets{
+    -webkit-transform-style:preserve-3d;
+    transform-style:preserve-3d;
+    position: absolute;
+}
+.mercurio{
+    width: 12px;
+    height: 12px;
+    top:58px;
+    left: 58px;
+    -webkit-animation: mercurio 4s linear infinite;
+    animation: mercurio 4s linear infinite;
+}
+.venera{
+    width: 28px;
+    height: 28px;
+    top:50px;
+    left: 50px;
+    -webkit-animation: venera 6s linear infinite;
+    animation: venera 6s linear infinite;
+}
+.earth{
+    width: 30px;
+    height: 30px;
+    top:50px;
+    left: 50px;
+    -webkit-animation: earth 10s linear infinite;
+    animation: earth 10s linear infinite;
+    border: 1px dashed white;
+    border-radius: 50px;
+}
+.moon{
+    width: 20px;
+    height: 20px;
+    top:5px;
+    left: 5px;
+    -webkit-animation: moon 4s linear infinite;
+    animation: moon 4s linear infinite;
+}
+.mars{
+    width: 24px;
+    height: 24px;
+    top:52px;
+    left: 52px;
+    -webkit-animation: mars 14s linear infinite;
+    animation: mars 14s linear infinite;
+}
+.jupiter{
+    width: 60px;
+    height: 60px;
+    top:34px;
+    left: 34px;
+    -webkit-animation: jupiter 18s linear infinite;
+    animation: jupiter 18s linear infinite;
+}
+.saturn{
+    width: 60px;
+    height: 60px;
+    top:34px;
+    left: 34px;
+    -webkit-animation: saturn 22s linear infinite;
+    animation: saturn 22s linear infinite;
+}
+.uranus{
+    width: 50px;
+    height: 50px;
+    top:39px;
+    left: 39px;
+    -webkit-animation: uranus 28s linear infinite;
+    animation: uranus 28s linear infinite;
+}
+.neptune{
+    width: 40px;
+    height: 40px;
+    top:44px;
+    left: 44px;
+    -webkit-animation: neptune 32s linear infinite;
+    animation: neptune 32s linear infinite;
+}
+.pluto{
+    width: 20px;
+    height: 20px;
+    top:54px;
+    left: 54px;
+    -webkit-animation: pluto 38s linear infinite;
+    animation: pluto 38s linear infinite;
+}
+
+/*Animation for planets*/
+
+@-webkit-keyframes mercurio {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(-100px) rotate(0deg);
+        transform: rotate(0deg) translateX(-100px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translateX(-100px) rotate(-360deg);
+        transform: rotate(360deg) translateX(-100px) rotate(-360deg);
+    }
+}
+@keyframes mercurio {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(-100px) rotate(0deg);
+        transform: rotate(0deg) translateX(-100px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translateX(-100px) rotate(-360deg);
+        transform: rotate(360deg) translateX(-100px) rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes venera {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(-150px) rotate(0deg);
+        transform: rotate(0deg) translateX(-150px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translateX(-150px) rotate(-360deg);
+        transform: rotate(360deg) translateX(-150px) rotate(-360deg);
+    }
+}
+@keyframes venera {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(-150px) rotate(0deg);
+        transform: rotate(0deg) translateX(-150px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translateX(-150px) rotate(-360deg);
+        transform: rotate(360deg) translateX(-150px) rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes earth {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(-200px) rotate(0deg);
+        transform: rotate(0deg) translateX(-200px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translateX(-200px) rotate(-360deg);
+        transform: rotate(360deg) translateX(-200px) rotate(-360deg);
+    }
+}
+@keyframes earth {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(-200px) rotate(0deg);
+        transform: rotate(0deg) translateX(-200px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translateX(-200px) rotate(-360deg);
+        transform: rotate(360deg) translateX(-200px) rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes moon {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(-25px) rotate(0deg);
+        transform: rotate(0deg) translateX(-25px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translateX(-25px) rotate(-360deg);
+        transform: rotate(360deg) translateX(-25px) rotate(-360deg);
+    }
+}
+@keyframes moon {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(-15px) rotate(0deg);
+        transform: rotate(0deg) translateX(-15px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translateX(-15px) rotate(-360deg);
+        transform: rotate(360deg) translateX(-15px) rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes mars {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(-250px) rotate(0deg);
+        transform: rotate(0deg) translateX(-250px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translateX(-250px) rotate(-360deg);
+        transform: rotate(360deg) translateX(-250px) rotate(-360deg);
+    }
+}
+@keyframes mars {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(-250px) rotate(0deg);
+        transform: rotate(0deg) translateX(-250px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translateX(-250px) rotate(-360deg);
+        transform: rotate(360deg) translateX(-250px) rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes jupiter {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(-300px) rotate(0deg);
+        transform: rotate(0deg) translateX(-300px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translateX(-300px) rotate(-360deg);
+        transform: rotate(360deg) translateX(-300px) rotate(-360deg);
+    }
+}
+@keyframes jupiter {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(-300px) rotate(0deg);
+        transform: rotate(0deg) translateX(-300px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translateX(-300px) rotate(-360deg);
+        transform: rotate(360deg) translateX(-300px) rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes saturn {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(-350px) rotate(0deg);
+        transform: rotate(0deg) translateX(-350px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translateX(-350px) rotate(-360deg);
+        transform: rotate(360deg) translateX(-350px) rotate(-360deg);
+    }
+}
+@keyframes saturn {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(-350px) rotate(0deg);
+        transform: rotate(0deg) translateX(-350px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translateX(-350px) rotate(-360deg);
+        transform: rotate(360deg) translateX(-350px) rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes uranus {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(-400px) rotate(0deg);
+        transform: rotate(0deg) translateX(-400px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translateX(-400px) rotate(-360deg);
+        transform: rotate(360deg) translateX(-400px) rotate(-360deg);
+    }
+}
+@keyframes uranus {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(-400px) rotate(0deg);
+        transform: rotate(0deg) translateX(-400px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translateX(-400px) rotate(-360deg);
+        transform: rotate(360deg) translateX(-400px) rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes neptune {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(-450px) rotate(0deg);
+        transform: rotate(0deg) translateX(-450px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translateX(-450px) rotate(-360deg);
+        transform: rotate(360deg) translateX(-450px) rotate(-360deg);
+    }
+}
+@keyframes neptune {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(-450px) rotate(0deg);
+        transform: rotate(0deg) translateX(-450px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translateX(-450px) rotate(-360deg);
+        transform: rotate(360deg) translateX(-450px) rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes pluto {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(-500px) rotate(0deg);
+        transform: rotate(0deg) translateX(-500px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translateX(-500px) rotate(-360deg);
+        transform: rotate(360deg) translateX(-500px) rotate(-360deg);
+    }
+}
+@keyframes pluto {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(-500px) rotate(0deg) ;
+        transform: rotate(0deg) translateX(-500px) rotate(0deg) ;
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translateX(-500px) rotate(-360deg);
+        transform: rotate(360deg) translateX(-500px) rotate(-360deg);
+    }
+}

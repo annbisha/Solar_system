@@ -2,4 +2,4 @@
 Solar_system      
 https://annbisha.github.io/Solar_system/
 ## Technologies Used:
-HTML,CSS
+HTML,CSS,KeyFrames
